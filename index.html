@@ -8,15 +8,56 @@
 
 <body class="demo">
   <a-scene>
-    <a-light color="white" position="0 0 0" type="point" intensity="2"></a-light>
-    <a-camera cursor position="0 0 0"></a-camera>
-    <a-sky src="images/stars.jpg"></a-sky>
-    <a-entity id="earth-and-moon">
-      <a-entity position="0 0 -5">
-        <a-entity id="earth">
-          <a-sphere radius="1" position="0 0 0" rotation="0 0 0" src="images/earth.jpg"></a-sphere>
-        </a-entity>
+    <a-camera cursor position="28 2 0"></a-camera>
+    <a-entity>
+
+      <a-sky src="images/stars.jpg"></a-sky>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 40000">
+        <a-sphere position="52 2 0" radius="3" src="images/neptune.jpg"></a-sphere>
       </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 40000">
+        <a-sphere position="48 2 0" radius="5" src="images/uranus.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 5000">
+        <a-sphere position="40 4 0" radius="6" src="images/saturn.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 5500">
+        <a-sphere position="28 2 0" radius="7" src="images/jupiter.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 6500">
+        <a-sphere position="24 2 0" radius="2" src="images/mars.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 7000">
+        <a-sphere position="20 2 0" radius="3" src="images/earth.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 8000">
+        <a-sphere position="16 2 0" radius="2" src="images/venus.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0"
+        animation="easing:linear; repeat:indefinite; property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-sphere position="12 2 0" radius="1" src="images/mercury.jpg"></a-sphere>
+      </a-entity>
+
+      <a-entity rotation="0 0 0">
+        <a-sphere position="0 -4 0" radius="10" src="images/sun2.jpg"></a-sphere>
+      </a-entity>
+
     </a-entity>
   </a-scene>
+
 </body>
